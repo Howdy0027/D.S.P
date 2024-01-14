@@ -111,7 +111,7 @@ _include figures in chunks and discuss your findings in the figure._
 #| tbl-cap: "Not much of a table"
 #| tbl-cap-location: top
 # Include and execute your code here
-print(mpg
+print(df
   .head(5)
   .filter(["manufacturer", "model","year", "hwy"])
   .to_markdown(index=False))
