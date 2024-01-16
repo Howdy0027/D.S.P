@@ -82,7 +82,14 @@ chart = px.scatter(
     x="displ", 
     y="hwy",
     color="manufacturer",
-    symbol="manufacturer"
+    symbol="manufacturer",
+    hover_data=["manufacturer", "model","year", "hwy"],
+    title="The Relationship Between MPG and Displacement"
+)
+chart.update_layout(
+    xaxis_title = "Engine Displacement (in litres)",
+    yaxis_title = "Highway Miles Per Gallon",
+    legend_title = "Manufacturer"
 )
 chart.show()
 
